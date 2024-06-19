@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway';
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.title{
+    background: linear-gradient(to bottom, rgba(6, 105, 28, 0.909), rgb(22, 22, 22));;
+}
+
+span{
+    color: rgba(0, 212, 46, 0.909);
+}
+
+form{
+    margin-top: 60px;
+}
+
+form input{
+    margin-bottom: 20px;
+    background: rgb(38, 38, 38);
+    border-radius: 10px;
+    text-align: center;
+    padding: 4px 40px;
+    filter: drop-shadow(3px 3px 0 rgba(7, 114, 30, 0.909));
+}
+
+form label{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#btn{
+    filter: none;
+}
+
+#btn:hover{
+    filter: drop-shadow(0 0 10px rgba(0, 212, 46, 0.909));
+    color: rgb(38, 38, 38);
+}
+
+#btn:active{
+    transform: scale(.9);
+    filter: none;
+}
+
+.result{
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.playlist{
+    max-width: 100%;
+    justify-content: center;
+    filter: drop-shadow(10px 10px 13px rgba(6, 66, 23, 0.909));
+    transition: .2s;
+}
+
+.playlist:hover{
+    transform: scale(.9);
+}
+
+.playlist img{
+    min-width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+
+
+.up{
+    display: grid;
+    justify-content: center;
+    padding: 13px 0px;
+    border-radius: 100%;
+    bottom: 2%;
+    left: 2%;
+    z-index: 99999;
+    transition: .3s;
+    text-align: center;
+    filter: drop-shadow(6px 6px 9px rgb(26, 26, 26));
+    opacity: 0;
+    background-color: rgba(44, 215, 81, 0.909);
+}
+
+.up:hover{
+    filter: drop-shadow(0 0 10px rgba(0, 212, 46, 0.909));
+}
+
+.up:active{
+    transform: scale(.8);
+}
+
+.up .icon{
+    position: relative;
+    width: 50px;
+    z-index: 99999;
+    color: rgb(251, 251, 234);
+    transition: .4s;
+}
+
+.up a{
+    display: block;
+}
+
+.up .icon img{
+    width: 25px;
+    margin-left: 13px;
+}
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 4rem;
+    background-color: rgb(28, 28, 28);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/Spotify_icon.svg" type="image/png">
+    <script src="./script.js"></script> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Playlist Recomendation</title>
+
+</head>
+<body class="bg-neutral-900 text-green-600 text-center min-h-screen flex flex-col">
+    <section class="flex-grow" id="inicio">
+        <div class="title mx-auto pt-10 md:pt-20 pb-3 md:pb-9 w-full">
+            <h1 class="font-medium text-2xl md:text-5xl mb-1 md:mb-3 text-yellow-50">Recomendaciones de playlists</h1>
+            <h3 class="text-[10px] md:text-xl font-mono mb-6">Encuentra las mejores playlists en base a tus parámetros</h3>
+        </div>
+        <div class="grid justify-center row-auto text-center">
+            <form action="" method="get" class="get-playlist max-w-md mx-auto">
+                <div class="mb-4">
+                    <label for="animo" class="block text-left font-medium mb-1">Ánimo</label>
+                    <input type="text" name="animo" id="animo" placeholder="Su estado de ánimo..." class="w-full px-4 py-2 rounded-md bg-neutral-800 text-green-600 focus:outline-none focus:ring-2 focus:ring-green-600">
+                </div>
+                <div class="mb-4">
+                    <label for="actividad" class="block text-left font-medium mb-1">Actividad</label>
+                    <input type="text" name="actividad" id="actividad" placeholder="Actividad realizada..." class="w-full px-4 py-2 rounded-md bg-neutral-800 text-green-600 focus:outline-none focus:ring-2 focus:ring-green-600">
+                </div>
+                <div class="mb-6">
+                    <label for="genero" class="block text-left font-medium mb-1">Género musical</label>
+                    <input type="text" name="genero" id="genero" placeholder="Género musical..." class="w-full px-4 py-2 rounded-md bg-neutral-800 text-green-600 focus:outline-none focus:ring-2 focus:ring-green-600">
+                </div>
+                <input class="bg-green-700 text-yellow-50 font-medium text-lg px-6 py-2 rounded-3xl transition-all hover:bg-green-600" type="submit" name="" id="btn" value="Buscar playlist">
+            </form>
+        </div>
+    </section>
+    <section class="up fixed">
+        <div class="icon">
+            <a href="#inicio">
+                <img src="./assets/971322.svg">
+            </a>
+        </div>
+    </section>
+    <div class="result"></div>
+    <footer>
+        <p>JoaquinCasasola<date>2024</date>&copy;</p>
+    </footer>
+</body>
+</html>
+
