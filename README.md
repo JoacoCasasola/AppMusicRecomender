@@ -23,4 +23,4 @@ The app uses the Spotify API to access a vast library of music, ensuring you alw
 
 ## ✍️ Authors 
 
-- ***[Joaquín Casasola](https://github.com/tu-usuario)*** - FullStack / Frontend Developer
+- ***[Joaquín Casasola](https://github.com/JoacoCasasola)*** - FullStack / Frontend Developer
