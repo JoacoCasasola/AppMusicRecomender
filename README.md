@@ -1,4 +1,4 @@
-# 🎶 Playlist recommender
+# 🎧 Playlist recommender
 
 ***This project is a web application that allows users to search for playlists on Spotify based on their mood, music genre, and activity. 
 Uses the Spotify API to get playlists that match the user's search criteria.***
